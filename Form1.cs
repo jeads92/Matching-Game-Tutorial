@@ -114,9 +114,9 @@ namespace MatchingGameTutorial
                 }
 
                 // If the player gets this far, the Timer isn't 
-                // running and firstClicked sin't null,
+                // running and firstClicked isn't null,
                 // so this must be the second icon the play clicked
-                //Set its color to black
+                // Set its color to black
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -145,14 +145,14 @@ namespace MatchingGameTutorial
         /// <summary>
         /// This timer is started when the player clicks
         /// two icons that don't match,
-        /// so it counds three quarters of a second
+        /// so it counts three quarters of a second
         /// and then turns itself off and hides both icons
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void timer1_Tick(object sender, EventArgs e)
         {
-            // Sop the timer
+            // Stop the timer
             timer1.Stop();
 
             // Hide both the icons
@@ -189,7 +189,7 @@ namespace MatchingGameTutorial
             // If the loop didn't return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form.
-            MessageBox.Show("You matched all the icons!?, You won.");
+            MessageBox.Show("You matched all the icons!?. You won.");
             Close();
         }
 
